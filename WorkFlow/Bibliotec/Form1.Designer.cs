@@ -1,4 +1,4 @@
-﻿namespace WorkFlow
+﻿namespace Bibliotec
 {
     partial class Form1
     {
@@ -28,35 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblconexao = new System.Windows.Forms.Label();
-            this.SuspendLayout();
-            // 
-            // lblconexao
-            // 
-            this.lblconexao.AutoSize = true;
-            this.lblconexao.Location = new System.Drawing.Point(216, 93);
-            this.lblconexao.Name = "lblconexao";
-            this.lblconexao.Size = new System.Drawing.Size(35, 13);
-            this.lblconexao.TabIndex = 0;
-            this.lblconexao.Text = "label1";
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblconexao);
-            this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblconexao;
     }
 }
 
