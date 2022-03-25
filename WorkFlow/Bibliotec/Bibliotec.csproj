@@ -38,6 +38,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GroupDocs.Conversion, Version=22.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\GroupDocs.Conversion.22.2.0\lib\net35\GroupDocs.Conversion.dll</HintPath>
+    </Reference>
     <Reference Include="JsonSubTypes, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ee75fc290dbc1176, processorArchitecture=MSIL">
       <HintPath>..\packages\JsonSubTypes.1.8.0\lib\net47\JsonSubTypes.dll</HintPath>
     </Reference>
@@ -145,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API\Notion\ClsAuthNotion.cs" />
+    <Compile Include="Arquivos\ClsImagens.cs" />
     <Compile Include="Banco\ClsBancoPostgres.cs" />
     <Compile Include="Executa\ClsBat.cs" />
     <Compile Include="Form1.cs">
@@ -189,6 +193,8 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\System.Text.Json.6.0.2\build\System.Text.Json.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Text.Json.6.0.2\build\System.Text.Json.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.1\build\Microsoft.Extensions.Logging.Abstractions.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.1\build\Microsoft.Extensions.Logging.Abstractions.targets'))" />
+    <Error Condition="!Exists('..\packages\GroupDocs.Conversion.22.2.0\build\net35\GroupDocs.Conversion.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\GroupDocs.Conversion.22.2.0\build\net35\GroupDocs.Conversion.targets'))" />
   </Target>
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.1\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.1\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
+  <Import Project="..\packages\GroupDocs.Conversion.22.2.0\build\net35\GroupDocs.Conversion.targets" Condition="Exists('..\packages\GroupDocs.Conversion.22.2.0\build\net35\GroupDocs.Conversion.targets')" />
 </Project>
