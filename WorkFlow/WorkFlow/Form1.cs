@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using Bibliotec.API;
 using Bibliotec.Classes;
+using System;
+using System.Windows.Forms;
 
 namespace WorkFlow
 {
@@ -20,8 +14,16 @@ namespace WorkFlow
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lblconexao.Text = ClsBancoPostgres.sConexao+"\r\n";
+            lblconexao.Text = ClsBancoPostgres.sConexao + "\r\n";
             lblconexao.Text += DateTime.Now.ToString();
+
+            ClsAuthNotion cNotion = new ClsAuthNotion();
+            cNotion.FU_Loga();
+
+            foreach (string c in cNotion.SListaUser)
+            {
+                txtLista.Text = c + "\r\n";
+            }
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.lblconexao = new System.Windows.Forms.Label();
+            this.txtLista = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // lblconexao
@@ -40,11 +41,21 @@
             this.lblconexao.TabIndex = 0;
             this.lblconexao.Text = "label1";
             // 
+            // txtLista
+            // 
+            this.txtLista.Dock = System.Windows.Forms.DockStyle.Right;
+            this.txtLista.Location = new System.Drawing.Point(347, 0);
+            this.txtLista.Name = "txtLista";
+            this.txtLista.Size = new System.Drawing.Size(453, 450);
+            this.txtLista.TabIndex = 1;
+            this.txtLista.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtLista);
             this.Controls.Add(this.lblconexao);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -57,6 +68,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblconexao;
+        private System.Windows.Forms.RichTextBox txtLista;
     }
 }
 
