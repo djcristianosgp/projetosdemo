@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -66,6 +67,12 @@
     <Compile Include="Telas\Imagens\FrmConvertImagens.Designer.cs">
       <DependentUpon>FrmConvertImagens.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Imagens\FrmDownloadImagemLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Imagens\FrmDownloadImagemLink.Designer.cs">
+      <DependentUpon>FrmDownloadImagemLink.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Imagens\FrmConvertImagens.resx">
       <DependentUpon>FrmConvertImagens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Imagens\FrmDownloadImagemLink.resx">
+      <DependentUpon>FrmDownloadImagemLink.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

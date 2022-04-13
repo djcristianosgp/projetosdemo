@@ -17,5 +17,12 @@ namespace WorkFlow.Telas
             FormConvertImagens.MdiParent = this;
             FormConvertImagens.Show();
         }
+
+        private void miDownloadImagem_Click(object sender, EventArgs e)
+        {
+            FrmDownloadImagemLink FormDownImag = new FrmDownloadImagemLink();
+            FormDownImag.MdiParent = this;
+            FormDownImag.Show();
+        }
     }
 }

@@ -34,6 +34,7 @@
             this.MuArquivo = new System.Windows.Forms.ToolStripMenuItem();
             this.MuImagens = new System.Windows.Forms.ToolStripMenuItem();
             this.MiConvertImagens = new System.Windows.Forms.ToolStripMenuItem();
+            this.miDownloadImagem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +66,8 @@
             // MuImagens
             // 
             this.MuImagens.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MiConvertImagens});
+            this.MiConvertImagens,
+            this.miDownloadImagem});
             this.MuImagens.Name = "MuImagens";
             this.MuImagens.Size = new System.Drawing.Size(64, 20);
             this.MuImagens.Text = "Imagens";
@@ -76,6 +78,13 @@
             this.MiConvertImagens.Size = new System.Drawing.Size(180, 22);
             this.MiConvertImagens.Text = "Converter Imagens";
             this.MiConvertImagens.Click += new System.EventHandler(this.MiConvertImagens_Click);
+            // 
+            // miDownloadImagem
+            // 
+            this.miDownloadImagem.Name = "miDownloadImagem";
+            this.miDownloadImagem.Size = new System.Drawing.Size(180, 22);
+            this.miDownloadImagem.Text = "Download Imagem";
+            this.miDownloadImagem.Click += new System.EventHandler(this.miDownloadImagem_Click);
             // 
             // FrmPrincipal
             // 
@@ -89,10 +98,11 @@
             this.IsMdiContainer = true;
             this.KeyPreview = true;
             this.MainMenuStrip = this.mnPrincipal;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WorkFlow - Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.mnPrincipal.ResumeLayout(false);
             this.mnPrincipal.PerformLayout();
             this.ResumeLayout(false);
@@ -107,5 +117,6 @@
         private System.Windows.Forms.ToolStripMenuItem MuArquivo;
         private System.Windows.Forms.ToolStripMenuItem MuImagens;
         private System.Windows.Forms.ToolStripMenuItem MiConvertImagens;
+        private System.Windows.Forms.ToolStripMenuItem miDownloadImagem;
     }
 }
